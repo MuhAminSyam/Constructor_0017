@@ -28,3 +28,7 @@ class Universitas;
 // Class Mahasiswa
 class Mahasiswa
 {
+private:
+    string nama; // Nama mahasiswa
+    string NIM;  // NIM mahasiswa
+    float nilai; // Nilai mahasiswa (bersifat private)
