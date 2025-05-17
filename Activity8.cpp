@@ -138,3 +138,60 @@ float lihatGajiStaff(Staff *s)
 {
     return s->gaji;
 }
+
+// =======================
+// Class Universitas
+// =======================
+class Universitas
+{
+public:
+    // Fungsi untuk menampilkan gaji dosen (lewat fungsi friend)
+    void infoGajiDosen(Dosen *d)
+    {
+        cout << "Gaji Dosen: " << aksesGaji(d) << endl;
+    }
+
+    // Fungsi untuk menampilkan gaji staff (lewat fungsi friend)
+    void infoGajiStaff(Staff *s)
+    {
+        cout << "Gaji Staff: " << lihatGajiStaff(s) << endl;
+    }
+};
+
+// =======================
+// Fungsi Utama (main)
+// =======================
+int main()
+{
+    // Membuat objek Mahasiswa
+    Mahasiswa m1("Amin", "2023012345");
+
+    // Membuat objek Dosen
+    Dosen d1("Pak Budi", "001122", "Lektor", 12000000);
+
+    // Membuat objek Staff
+    Staff s1("Bu Rina", 1001, 8000000);
+
+    // Membuat objek Universitas
+    Universitas u;
+
+    // Dosen memberi nilai ke mahasiswa
+    d1.beriNilai(&m1, 88.5);
+
+    // Menampilkan info mahasiswa setelah diberi nilai
+    m1.tampilkanInfo();
+
+    // Staff mengubah pangkat dosen
+    s1.ubahPangkat(&d1, "Guru Besar");
+
+    // Menampilkan info dosen setelah diubah pangkat
+    d1.tampilkanInfo();
+
+    // Universitas mengakses dan menampilkan gaji dosen
+    u.infoGajiDosen(&d1);
+
+    // Universitas mengakses dan menampilkan gaji staff
+    u.infoGajiStaff(&s1);
+
+    return 0;
+}
