@@ -310,3 +310,22 @@ mahasiswa::mahasiswa()
     nim = 0;
     nama = "";
 }
+
+// implementasi konstruktor dengan parameter nim
+mahasiswa::mahasiswa(int iNim)
+{ // konstruktor nim saja
+    nim = iNim;
+}
+
+// implementasi konstruktor dengan parameter nama
+mahasiswa::mahasiswa(string iNama)
+{ // konstruktor nama saja
+    nama = iNama;
+}
+
+// implementasi konstruktor dengan dua parameter
+mahasiswa::mahasiswa(int iNim, string iNama)
+{ // konstruktor nim dan nama
+    nim = iNim;
+    nama = iNama;
+}
