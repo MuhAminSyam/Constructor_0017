@@ -351,3 +351,26 @@ int main()
 
     return 0; // akhir program
 }
+
+// activity 9
+// mbrStatikFunc
+#include <iostream>  // library input/output
+#include <string>    // library string
+using namespace std; // menggunakan namespace std
+
+class mahasiswa
+{ // deklarasi class mahasiswa
+private:
+    static int nim; // atribut nim (static)
+public:
+    int id;      // atribut id
+    string nama; // atribut nama
+
+    void setID();    // fungsi setID
+    void printAll(); // fungsi printAll
+
+    static void setNim(int pNim); // fungsi static untuk set nim
+    static int getNim();          // fungsi static untuk get nim
+
+    mahasiswa(string pnama); // konstruktor
+};
