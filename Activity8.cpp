@@ -195,3 +195,12 @@ int main()
 
     return 0;
 }
+
+// activity 9
+// chainfunction
+#include <iostream>  // Library input/output
+using namespace std; // Menggunakan namespace std
+
+class buku // Deklarasi class buku
+{
+    string judul;
