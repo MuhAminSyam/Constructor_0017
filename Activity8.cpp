@@ -47,3 +47,7 @@ public:
     {
         cout << "Mahasiswa: " << nama << " | NIM: " << NIM << " | Nilai: " << nilai << endl;
     }
+
+    // Menjadikan class Dosen sebagai friend agar bisa mengubah nilai
+    friend class Dosen;
+};
