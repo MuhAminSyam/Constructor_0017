@@ -119,3 +119,12 @@ public:
 
     // Fungsi untuk mengubah pangkat dosen (pakai pointer)
     void ubahPangkat(Dosen *d, string pangkatBaru)
+    {
+        d->pangkat = pangkatBaru;
+    }
+
+    // Menampilkan informasi staff
+    void tampilkanInfo()
+    {
+        cout << "Staff: " << nama << " | ID: " << IDStaff << endl;
+    }
