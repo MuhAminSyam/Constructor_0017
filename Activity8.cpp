@@ -56,3 +56,9 @@ public:
 // Class Dosen
 // =======================
 class Dosen
+{
+private:
+    string nama;    // Nama dosen
+    string NIDN;    // Nomor induk dosen nasional
+    string pangkat; // Pangkat dosen
+    float gaji;     // Gaji dosen
