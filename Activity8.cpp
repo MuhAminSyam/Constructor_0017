@@ -224,3 +224,21 @@ int main() // Fungsi utama program
     cout << bukunya.setJudul("Matematika").getJudul();
     return 0;
 }
+
+// activity 9
+// destruktor
+#include <iostream>  // library input/output
+using namespace std; // menggunakan namespace std
+
+class angka
+{ // deklarasi class angka
+private:
+    int *arr;
+    int panjang;
+
+public:
+    angka(int);       // konstruktor
+    ~angka();         // destruktor
+    void cetakData(); // fungsi untuk cetak data
+    void isiData();   // fungsi untuk input data
+};
