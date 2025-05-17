@@ -51,3 +51,8 @@ public:
     // Menjadikan class Dosen sebagai friend agar bisa mengubah nilai
     friend class Dosen;
 };
+
+// =======================
+// Class Dosen
+// =======================
+class Dosen
