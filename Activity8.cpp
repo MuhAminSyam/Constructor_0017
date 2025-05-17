@@ -374,3 +374,39 @@ public:
 
     mahasiswa(string pnama); // konstruktor
 };
+
+// definisi variabel static
+int mahasiswa::nim = 0; // inisialisasi nim
+
+// definisi fungsi setID
+void mahasiswa::setID()
+{ // setID
+    id = ++nim;
+}
+
+// definisi fungsi printAll
+void mahasiswa::printAll()
+{ // printAll
+    cout << "ID = " << id << endl;
+    cout << "Nama = " << nama << endl;
+    cout << endl;
+}
+
+// definisi fungsi static setNim
+void mahasiswa::setNim(int pNim)
+{ // setNim static
+    nim = pNim;
+}
+
+// definisi fungsi static getNim
+int mahasiswa::getNim()
+{ // getNim static
+    return nim;
+}
+
+// definisi konstruktor
+mahasiswa::mahasiswa(string pnama) // konstruktor
+    : nama(pnama)
+{
+    setID();
+}
