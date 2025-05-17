@@ -242,3 +242,19 @@ public:
     void cetakData(); // fungsi untuk cetak data
     void isiData();   // fungsi untuk input data
 };
+
+// implementasi fungsi anggota
+angka::angka(int i)
+{ // konstruktor
+    panjang = i;
+    arr = new int[i];
+    isiData();
+}
+
+angka::~angka()
+{ // destruktor
+    cout << endl;
+    cetakData();
+    delete[] arr;
+    cout << "Alamat Array Sudah Dilepaskan" << endl;
+}
