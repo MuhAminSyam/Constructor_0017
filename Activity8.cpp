@@ -62,3 +62,13 @@ private:
     string NIDN;    // Nomor induk dosen nasional
     string pangkat; // Pangkat dosen
     float gaji;     // Gaji dosen
+
+public:
+    // Constructor untuk inisialisasi dosen
+    Dosen(string nama, string NIDN, string pangkat, float gaji)
+    {
+        this->nama = nama;
+        this->NIDN = NIDN;
+        this->pangkat = pangkat;
+        this->gaji = gaji;
+    }
