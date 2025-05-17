@@ -72,3 +72,9 @@ public:
         this->pangkat = pangkat;
         this->gaji = gaji;
     }
+
+    // Fungsi untuk memberi nilai ke mahasiswa (mengakses nilai secara langsung)
+    void beriNilai(Mahasiswa *m, float nilai)
+    {
+        m->nilai = nilai; // karena class ini friend, bisa akses langsung nilai
+    }
