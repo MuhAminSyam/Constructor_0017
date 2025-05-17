@@ -284,3 +284,22 @@ int main()
     delete ptrBelajarcpp;                // hapus objek heap
     return 0;
 } // objek stack dihapus
+
+// activity 9
+// constructor
+#include <iostream>  // library input/output
+#include <string>    // library string
+using namespace std; // menggunakan namespace std
+
+class mahasiswa
+{ // deklarasi class mahasiswa
+private:
+    int nim;     // atribut nim
+    string nama; // atribut nama
+public:
+    mahasiswa();                       // konstruktor tanpa parameter
+    mahasiswa(int);                    // konstruktor dengan parameter nim
+    mahasiswa(string);                 // konstruktor dengan parameter nama
+    mahasiswa(int iNim, string iNama); // konstruktor dengan dua parameter
+    void cetak();                      // fungsi untuk cetak data
+};
