@@ -329,3 +329,25 @@ mahasiswa::mahasiswa(int iNim, string iNama)
     nim = iNim;
     nama = iNama;
 }
+
+// implementasi fungsi cetak
+void mahasiswa::cetak()
+{ // fungsi cetak data
+    cout << "Nim = " << nim << endl;
+    cout << "Nama = " << nama << endl;
+}
+
+int main()
+{                                 // fungsi utama
+    mahasiswa mhs1;               // objek mhs1 (konstruktor default)
+    mahasiswa mhs2(20);           // objek mhs2 (konstruktor nim)
+    mahasiswa mhs3("Indra");      // objek mhs3 (konstruktor nama)
+    mahasiswa mhs4(30, "Fauzan"); // objek mhs4 (konstruktor nim dan nama)
+
+    mhs1.cetak(); // cetak data mhs1
+    mhs2.cetak(); // cetak data mhs2
+    mhs3.cetak(); // cetak data mhs3
+    mhs4.cetak(); // cetak data mhs4
+
+    return 0; // akhir program
+}
