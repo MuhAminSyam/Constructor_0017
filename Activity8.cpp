@@ -41,3 +41,9 @@ public:
         this->NIM = NIM;
         this->nilai = 0; // Default nilai = 0
     }
+
+    // Fungsi untuk menampilkan informasi mahasiswa
+    void tampilkanInfo()
+    {
+        cout << "Mahasiswa: " << nama << " | NIM: " << NIM << " | Nilai: " << nilai << endl;
+    }
