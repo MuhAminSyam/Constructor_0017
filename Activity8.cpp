@@ -87,3 +87,7 @@ public:
 
     // Menjadikan Staff sebagai friend agar bisa ubah pangkat
     friend class Staff;
+
+    // Menjadikan fungsi aksesGaji sebagai friend agar bisa akses gaji
+    friend float aksesGaji(Dosen *d);
+};
