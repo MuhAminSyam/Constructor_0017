@@ -84,3 +84,6 @@ public:
     {
         cout << "Dosen: " << nama << " | NIDN: " << NIDN << " | Pangkat: " << pangkat << endl;
     }
+
+    // Menjadikan Staff sebagai friend agar bisa ubah pangkat
+    friend class Staff;
