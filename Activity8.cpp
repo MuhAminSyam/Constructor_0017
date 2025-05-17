@@ -116,3 +116,6 @@ public:
         this->IDStaff = IDStaff;
         this->gaji = gaji;
     }
+
+    // Fungsi untuk mengubah pangkat dosen (pakai pointer)
+    void ubahPangkat(Dosen *d, string pangkatBaru)
