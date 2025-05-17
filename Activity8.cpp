@@ -91,3 +91,9 @@ public:
     // Menjadikan fungsi aksesGaji sebagai friend agar bisa akses gaji
     friend float aksesGaji(Dosen *d);
 };
+
+// Fungsi friend untuk mengakses gaji dosen
+float aksesGaji(Dosen *d)
+{
+    return d->gaji;
+}
