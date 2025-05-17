@@ -78,3 +78,9 @@ public:
     {
         m->nilai = nilai; // karena class ini friend, bisa akses langsung nilai
     }
+
+    // Fungsi untuk menampilkan informasi dosen
+    void tampilkanInfo()
+    {
+        cout << "Dosen: " << nama << " | NIDN: " << NIDN << " | Pangkat: " << pangkat << endl;
+    }
