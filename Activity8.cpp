@@ -18,3 +18,9 @@
 #include <iostream> // Untuk input-output
 #include <string>   // Untuk penggunaan tipe data string
 using namespace std;
+
+// Forward declaration untuk menghindari error referensi silang
+class Mahasiswa;
+class Dosen;
+class Staff;
+class Universitas;
