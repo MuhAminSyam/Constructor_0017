@@ -303,3 +303,10 @@ public:
     mahasiswa(int iNim, string iNama); // konstruktor dengan dua parameter
     void cetak();                      // fungsi untuk cetak data
 };
+
+// implementasi konstruktor tanpa parameter
+mahasiswa::mahasiswa()
+{ // konstruktor default
+    nim = 0;
+    nama = "";
+}
