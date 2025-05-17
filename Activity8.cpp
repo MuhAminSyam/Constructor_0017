@@ -410,3 +410,21 @@ mahasiswa::mahasiswa(string pnama) // konstruktor
 {
     setID();
 }
+
+int main()
+{                                   // fungsi utama
+    mahasiswa mhs1("Sri Dadi");     // objek mhs1
+    mahasiswa mhs2("Budi Jatmiko"); // objek mhs2
+    mahasiswa::setNim(9);           // set nim melalui static member function
+    mahasiswa mhs3("Andi Janu");    // objek mhs3
+    mahasiswa mhs4("Joko Wahono");  // objek mhs4
+
+    mhs1.printAll(); // cetak data mhs1
+    mhs2.printAll(); // cetak data mhs2
+    mhs3.printAll(); // cetak data mhs3
+    mhs4.printAll(); // cetak data mhs4
+
+    cout << "akses dari luar object = " << mahasiswa::getNim() << endl; // akses nim via static function
+
+    return 0; // akhir program
+}
