@@ -97,3 +97,22 @@ float aksesGaji(Dosen *d)
 {
     return d->gaji;
 }
+
+// =======================
+// Class Staff
+// =======================
+class Staff
+{
+private:
+    string nama; // Nama staff
+    int IDStaff; // ID staff
+    float gaji;  // Gaji staff
+
+public:
+    // Constructor untuk inisialisasi staff
+    Staff(string nama, int IDStaff, float gaji)
+    {
+        this->nama = nama;
+        this->IDStaff = IDStaff;
+        this->gaji = gaji;
+    }
