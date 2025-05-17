@@ -128,3 +128,13 @@ public:
     {
         cout << "Staff: " << nama << " | ID: " << IDStaff << endl;
     }
+
+    // Menjadikan fungsi lihatGajiStaff sebagai friend agar bisa akses gaji
+    friend float lihatGajiStaff(Staff *s);
+};
+
+// Fungsi friend untuk mengakses gaji staff
+float lihatGajiStaff(Staff *s)
+{
+    return s->gaji;
+}
