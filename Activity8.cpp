@@ -24,3 +24,7 @@ class Mahasiswa;
 class Dosen;
 class Staff;
 class Universitas;
+
+// Class Mahasiswa
+class Mahasiswa
+{
