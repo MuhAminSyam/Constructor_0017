@@ -276,3 +276,11 @@ void angka::isiData()
     }
     cout << endl;
 }
+
+int main()
+{                                        // fungsi utama
+    angka belajarcpp(3);                 // objek stack
+    angka *ptrBelajarcpp = new angka(5); // objek heap
+    delete ptrBelajarcpp;                // hapus objek heap
+    return 0;
+} // objek stack dihapus
