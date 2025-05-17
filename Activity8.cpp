@@ -258,3 +258,21 @@ angka::~angka()
     delete[] arr;
     cout << "Alamat Array Sudah Dilepaskan" << endl;
 }
+
+void angka::cetakData()
+{ // fungsi cetak data array
+    for (int i = 1; i <= panjang; i++)
+    {
+        cout << i << " " << arr[i] << endl;
+    }
+}
+
+void angka::isiData()
+{ // fungsi input data array
+    for (int i = 1; i <= panjang; i++)
+    {
+        cout << i << " : ";
+        cin >> arr[i];
+    }
+    cout << endl;
+}
