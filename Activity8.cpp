@@ -32,3 +32,12 @@ private:
     string nama; // Nama mahasiswa
     string NIM;  // NIM mahasiswa
     float nilai; // Nilai mahasiswa (bersifat private)
+
+public:
+    // Constructor untuk inisialisasi nama dan NIM
+    Mahasiswa(string nama, string NIM)
+    {
+        this->nama = nama;
+        this->NIM = NIM;
+        this->nilai = 0; // Default nilai = 0
+    }
